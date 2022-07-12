@@ -1,0 +1,101 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+    background-color: blue;
+    width: 100vw;
+    height: 100vh;
+
+    position: relative;
+}
+
+.bloco1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 350px;
+    text-align: center;
+    color: white;
+}
+
+.paises {
+    margin-top: 25px;
+    padding: 3px;
+    font-size: 1.1em;
+    background-color: rgba(255, 255, 255, 0.774);
+}
+
+.btn {
+    margin-top: 50px;
+    width: 70%;
+    padding: 9px;
+    font: normal 14pt arial;
+}
+
+@media screen and (max-width: 420px)  {
+    section {
+        width: 100vw;
+        height: 100vh;
+        background-image: url(../images/fundo-de-tela.jpg);
+        background-size: cover;
+        background-position: center;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bloco1 {
+        min-width: 280px;
+        max-width: 85%;
+        height: 40vh;
+        text-align: center;
+    }
+
+    h1 {
+        font: bold 18pt arial;
+    }
+
+    .paises {
+        background-color: rgba(255, 255, 255, 0.281);
+        padding: 8px;
+        margin-top: 16px;
+        font-size: 14pt;
+        text-align: center;
+        border-radius: 10px;
+        border: none;
+    }
+
+    .paises:focus {
+        outline: none;
+    }
+
+    .btn {
+        margin-top: 20px;
+        width: 50%;
+        padding: 8px;
+        text-transform: uppercase;
+        background-color: red;
+        color: #ccc;
+        font: bold 16px arial;
+        border: none;
+        border-radius: 6px;
+        transition: .6s;
+    }
+
+    .btn:hover {
+        color: rgba(0, 0, 0, 0.801);
+    }
+
+    .suanac {
+        margin-top: 50px;
+        font: normal 18pt arial;
+    }
+}
